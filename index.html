@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script defer src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <div class="container">
+        <h1><U>FAKE NEWS DETECTION SYSTEM</U></h1>
+        
+        <!-- Input text for News Check -->
+        <textarea id="newsText" placeholder="Enter news text here..."></textarea>
+        <button onclick="checkNews()">Check News</button>
+        <p id="result"></p>
+
+        <!-- File upload for checking news -->
+        <h2>Upload a File</h2>
+        <input type="file" id="fileInput">
+        <button onclick="uploadFile()">Upload & Check</button>
+        <p id="fileResult"></p>
+    </div>
+</body>
+</html>
